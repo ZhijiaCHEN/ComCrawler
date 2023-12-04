@@ -1,0 +1,14 @@
+psycopg2
+selenium
+beautifulsoup4
+requests
+lxml
+numpy
+pandas
+fasttext
+textdistance
+Pillow
+nltk
+lmfit
+psutil
+scikit-learn

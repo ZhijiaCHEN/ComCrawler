@@ -1,0 +1,6 @@
+language button-precision button-recall "comment button" comment-precision comment-recall "comment section"
+English 1.0 0.99 1.0 1.0 0.94 0.97
+Espanol 1.0 1.0 1.0 1.0 0.98 0.99
+Chinese 1.0 0.94 0.97 1.0 1.0 1.0
+Deutsch 1.0 0.75 0.85 1.0 1.0 1.0
+Francais 1.0 0.99 0.99 0.99 1.0 0.99

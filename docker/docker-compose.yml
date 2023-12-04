@@ -1,0 +1,34 @@
+version: "3.8"
+
+volumes: 
+    postgres:
+
+services: 
+    db:
+        image: postgres
+        container_name: postgres
+        environment: 
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_USER: postgres
+            POSTGRES_DB: comment
+        volumes: 
+            - postgres:/var/lib/postgresql/data
+        ports: 
+            - '5432:5432'
+    # pgadmin4:
+    #     image: dpage/pgadmin4
+    #     environment: 
+    #         PGADMIN_DEFAULT_EMAIL: 'zachary_chen@hotmail.com'
+    #         PGADMIN_DEFAULT_PASSWORD: '1'
+    #     ports: 
+    #         - '8080:80'
+    #     depends_on: 
+    #         - db
+    selenium:
+        image: 'selenium/standalone-firefox'
+        ports: 
+            - '4444:4444'
+        shm_size: '2gb'
+        environment:
+            SCREEN_WIDTH: '1920'
+            SCREEN_HEIGHT: '1080'

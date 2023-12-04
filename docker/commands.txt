@@ -1,0 +1,6 @@
+# postgresql
+docker run -p 5432:5432 -d --name postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=comment -v postgres:/var/lib/postgresql/data postgres
+# pgadmin4
+docker run -p 80:80 -e 'PGADMIN_DEFAULT_EMAIL=zachary_chen@hotmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=1' --name pgadmin4 -d dpage/pgadmin4
+# selenium Web driver server
+docker run -d --name selenium -e SCREEN_WIDTH=1920 -e SCREEN_HEIGHT=1080 -p 4444:4444 -p 5900:5900 --shm-size 2g selenium/standalone-firefox:4.0.0-alpha-6-20200730
